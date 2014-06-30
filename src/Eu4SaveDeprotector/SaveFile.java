@@ -1,0 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package Eu4SaveDeprotector;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+/**
+ *
+ * @author Dibujante
+ */
+public class SaveFile {
+
+    void Save(byte[] input, String string) throws FileNotFoundException, IOException {
+        try (FileOutputStream out = new FileOutputStream(string)) {
+            out.write(input);
+        }
+    }
+    
+}
