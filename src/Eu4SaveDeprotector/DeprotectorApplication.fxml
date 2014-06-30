@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Eu4SaveDeprotector.DeprotectorController">
+<children><SplitPane dividerPositions="0.75" focusTraversable="true" layoutX="220.0" layoutY="80.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+<children><SplitPane dividerPositions="0.35" focusTraversable="true" layoutX="226.0" layoutY="89.0" orientation="VERTICAL" prefHeight="331.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+<children><Label fx:id="SavegameNameLabel" alignment="TOP_LEFT" layoutX="199.0" layoutY="47.0" prefHeight="128.0" prefWidth="596.0" text="No game loaded" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<padding>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</padding></Label>
+</children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+<children><Label fx:id="MessagesLabel" alignment="TOP_LEFT" layoutX="250.0048828125" layoutY="47.0" prefHeight="128.0" prefWidth="596.0" text="Click &quot;Load Savegame&quot; to load a savegame.\n (Note: it is likely inside of C:\Users\YourUsername\Documents\Paradox Entertainment\Europa Universalis IV\save games)" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<padding>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</padding></Label>
+</children></AnchorPane>
+  </items>
+</SplitPane>
+</children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+<children><SplitPane dividerPositions="0.5" focusTraversable="true" layoutX="199.0" layoutY="18.0" prefHeight="196.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+<children><Button layoutX="125.1875" layoutY="14.0" mnemonicParsing="false" onAction="#handleLoadSavegameClick" prefHeight="59.0" prefWidth="302.0" text="Load Savegame" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+</children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+<children><Button layoutX="118.1875" layoutY="17.0" mnemonicParsing="false" onAction="#handleDeprotectAndSaveButtonClick" prefHeight="59.0" prefWidth="288.0" text="Unprotect and Save" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+</children></AnchorPane>
+  </items>
+</SplitPane>
+</children></AnchorPane>
+  </items>
+</SplitPane>
+</children></AnchorPane>

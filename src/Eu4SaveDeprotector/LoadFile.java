@@ -6,6 +6,7 @@
 
 package Eu4SaveDeprotector;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -16,8 +17,8 @@ import java.nio.file.Paths;
  */
 public class LoadFile {
 
-    byte[] Read(String encodedeu4) throws IOException {
-        return Files.readAllBytes(Paths.get(encodedeu4));
+    byte[] Read(File encodedeu4) throws IOException {
+        return Files.readAllBytes(encodedeu4.toPath());
     }
     
 }
